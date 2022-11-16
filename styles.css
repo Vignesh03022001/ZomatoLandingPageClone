@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero__section {
+  background-image: url(./images/heroSectionBackground.png);
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20rem;
+  height: 60px;
+  padding: 15px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+.navbar_div {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.navbar_div .user__icon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(227, 86, 86);
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(227, 86, 86);
+  display: none;
+}
+.hero__section_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  height: calc(60vh, 60px);
+  position: relative;
+  top: 40px;
+}
+.hero__section_logo {
+  width: 20%;
+}
+.hero__section_slogan {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 2em;
+  text-align: center;
+}
+.hero__section_input_container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  width: 50%;
+}
+.hero__section_input_container input {
+  border: none;
+  height: 30px;
+  padding: 15px;
+}
+.hero__section_input_container .location {
+  border-bottom-left-radius: 7.5px;
+  border-top-left-radius: 7.5px;
+  width: 30%;
+  border-right: 1.25px solid gray;
+}
+.input_container_searchbar {
+  width: 60%;
+}
+.hero__section_input_container .searchbar {
+  border-bottom-right-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  width: 85%;
+}
+.location-icon {
+  color: rgb(227, 86, 86);
+  width: 10px;
+  z-index: 1;
+}
+.search-icon {
+  color: gray;
+  margin-left: 10px;
+}
+.container__we_offer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vh auto;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.we_offer_boxes {
+  width: auto;
+  border: 1px solid rgb(254, 237, 237);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.we_offer_boxes:hover {
+  transform: scale(1.07);
+}
+.we_offer_boxes img {
+  width: 100%;
+  height: 190px;
+  object-position: center;
+  object-fit: cover;
+}
+.we_offer_content {
+  padding: 10px;
+}
+.we_offer_content h3 {
+  font-weight: 450;
+  font-size: 20px;
+}
+
+.section__collections {
+  margin: 10vh 14vw;
+}
+.section__collections h2 {
+  font-weight: 450;
+  font-size: 36px;
+  letter-spacing: 0.8px;
+}
+.collections__heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1vh;
+  font-size: 18px;
+  font-weight: 300;
+}
+.allCollections_text {
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(227, 86, 86);
+}
+.boxes_in__collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.boxes_in__collections p {
+  position: relative;
+  left: 5%;
+  top: 35vh;
+  color: white;
+}
+.boxes_in__collections .items {
+  height: 45vh;
+  width: 17vw;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  margin: 5vh 0;
+  padding: 10px;
+  position: relative;
+}
+.boxes_in__collections .item1_collections {
+  background-image: url(./images/collection1.jpg);
+}
+.item2_collections {
+  background: url(./images/collection2.jpg);
+}
+.item3_collections {
+  background: url(./images/collection3.jpg);
+}
+.item4_collections {
+  background: url(./images/collection4.jpg);
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85% /* rgba(0, 0, 0, 0)100% */
+  );
+}
+
+.location_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.popular_locations__section {
+  margin: 100px 200px auto 200px;
+}
+.popular_locations__section h2 {
+  margin: auto auto 2rem auto;
+  font-size: 32px;
+  font-weight: 400;
+}
+.popular_locations__section h2 strong {
+  font-weight: 500;
+}
+.location_container > .location {
+  border: 1px solid rgb(229, 179, 179);
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 0 10px 20px;
+  height: 70px;
+  position: relative;
+}
+.location_1 {
+  margin-left: 0;
+}
+.see_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.right_arrow {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+.download_the_app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 150px;
+  gap: 20px;
+  width: 100%;
+  padding: 25px;
+  background: rgb(255, 251, 247);
+}
+.mobile_img {
+  width: 20%;
+}
+.mobile_img img {
+  width: 250px;
+}
+.download_app_contents {
+  line-height: 40px;
+  width: 38%;
+  padding: 20px;
+}
+.download_app_contents h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  padding-bottom: 1.75rem;
+}
+.subcontent {
+  padding: 5px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+.download_app_radio_buttons {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 1rem;
+}
+.download_app_radio_buttons input {
+  margin-left: 8px;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(227, 86, 86);
+  accent-color: rgb(227, 86, 86);
+}
+.download_app_radio_buttons label {
+  margin-left: 8px;
+  position: relative;
+  bottom: 5px;
+}
+.download_app_email_sharelink {
+  margin-bottom: 1rem;
+}
+.download_app_email_sharelink .email_input {
+  border: none;
+  border: 1px solid rgb(225, 194, 194);
+  border-radius: 5px;
+  padding: 20px;
+  width: 60%;
+  height: 3rem;
+  font-size: 18px;
+}
+.download_app_email_sharelink .email_input::placeholder {
+  color: rgb(172, 159, 159);
+}
+.download_app_email_sharelink .btn {
+  background: #f06960;
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  height: 3rem;
+  margin-left: 0.75rem;
+}
+
+.btn:hover {
+  background: #c75048;
+  text-decoration: none;
+}
+.download_app_contents .download {
+  color: rgb(172, 159, 159);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.playstore_appstore_img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.playstore_appstore_img img {
+  width: 30%;
+}
+.explore_options_near_me {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+}
+.explore_options_near_me h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  padding-bottom: 1.75rem;
+}
+.explore-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(237, 212, 212);
+  border-radius: 10px;
+  height: 10vh;
+  padding: 3vh 3vw;
+  margin-bottom: 2vh;
+  font-size: 1.2em;
+}
+footer {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+}
+.company_and_country {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.company_and_country .zomato_logo {
+  height: 30px;
+}
+.country_language button {
+  margin: auto 10px;
+  font-size: 18px;
+  padding: 5px;
+  width: 120px;
+  background-color: white;
+  border: 1px solid rgb(237, 212, 212);
+  border-radius: 8px;
+}
+.country_language button .globe {
+  margin-right: 5px;
+}
+.country img {
+  width: 14px;
+  margin-right: 5px;
+}
+.arrow_down {
+  margin-left: 5px;
+}
+.navigation_container{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 5px;
+  margin-bottom: 50px;
+}
+.navigation_container h4{
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 2px;
+padding: 15px 0;
+}
+.footer__link{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+ padding: 3px 0;
+}
+.footer__link:hover{
+color: black;
+}
+.social__links_container button{
+border: none;
+background-color: black;
+color: white;
+padding: 6px;
+width: 30px;
+border-radius: 100%;
+}
+.footer__section_logos{
+  width: 75%;
+}
+.privacy_copyright{
+  font-size: 12px;
+  color: gray;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+/* Media */
+@media only screen and (max-width: 600px) {
+ 
+  .navbar_div .user__icon {
+    display: flex;
+  }
+  .links {
+    display: none;
+  }
+  nav {
+    padding: 16px;
+    gap:5rem;
+  }
+  .hero__section {
+    min-height: 80vh;
+  }
+  .hero__section_logo {
+    width: 50%;
+  }
+  .hero__section_slogan {
+    font-weight: 450;
+    letter-spacing: 0.8px;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .hero__section_input_container {
+    height: 14vh;
+    width: 90vw;
+    padding: 5px 0;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  .hero__section_input_container input {
+    height: 20px;
+  }
+  .hero__section_input_container .location {
+    border: none;
+    margin-left: 10px;
+    padding: 15px 10px;
+    width: auto;
+  }
+  .location-icon {
+    width: 2vw;
+    padding: 0 10px;
+  }
+  .hero__section_input_container .searchbar {
+    width: auto;
+    /* position: relative;
+        right: 2rem; */
+    padding: 0 10px;
+    font-weight: 300;
+  }
+  .input_container_searchbar {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 5px;
+  }
+  .container__we_offer {
+    font-size: 14px;
+  }
+  .container__we_offer h3 {
+    font-size: 18px;
+  }
+  .section__collections {
+    margin: auto 1rem;
+  }
+  .section__collections h2 {
+    font-size: 28px;
+  }
+  .boxes_in__collections p {
+    font-size: 12px;
+  }
+  .boxes_in__collections .items {
+    height: 45vh;
+    width: 100vw;
+    margin-top: 0.25rem;
+  }
+  .popular_locations__section {
+    margin: 1rem;
+  }
+  .popular_locations__section h2,
+  strong {
+    font-size: 24px;
+  }
+  .popular_locations__section p,
+  span {
+    font-size: 14px;
+  }
+  .mobile_img {
+    display: none;
+  }
+  .download_app_contents {
+    width: 100%;
+  }
+  .download_app_radio_buttons {
+    gap: 5px;
+    margin-bottom: 1rem;
+  }
+  .download_app_email_sharelink .email_input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .playstore_appstore_img img {
+    width:70%;
+  }
+  .explore_options_near_me h2 {
+    font-size: 24px;
+  }
+
+  .explore-box {
+    font-size: 14px;
+  }
+  footer{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .navigation_container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+  .country_language button {
+    margin-top: 16px;
+  }
+  .country_language{
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar_div {
+    font-size: 14px;
+  }
+  .hero__section_slogan {
+    font-size: 1.75em;
+    padding: 15px;
+    margin-left: 15px;
+  }
+  .popular_locations__section {
+    margin: 10px;
+  }
+}
